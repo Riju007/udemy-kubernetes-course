@@ -1,0 +1,33 @@
+developer:
+  name: Riju
+  experience: 8
+
+  skills:
+    - Python
+    - Django
+    - Docker
+    - Azure
+
+  learning:
+    current:
+      - Kubernetes
+      - Yaml
+    future:
+      - Go
+      - AI Engineering
+
+employee:
+  name: Riju
+  role: Developer
+
+  skills:
+    - Python
+    - Docker
+
+app:
+  backend:
+    language: Python
+  frontend:
+    framework: React
+database:
+  type: mysql

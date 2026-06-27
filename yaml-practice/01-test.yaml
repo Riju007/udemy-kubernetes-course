@@ -1,0 +1,58 @@
+name: Riju
+role: Developer
+experience: 5
+
+person:
+  name: Riju
+  role: Developer
+  skills:
+    - Python
+    - Django
+    - Docker
+    - Azure
+
+
+containers:
+  - name: nginx
+    image: nginx
+
+  - name: redis
+    image: redis
+
+replicas: 3
+debug: true
+port: 8080
+
+# This is a comment in yaml
+
+# application config
+app:
+  name: inventory-service
+
+# database config
+database:
+  host: localhost
+  port: 3306
+
+# multi line string
+script: |
+  echo "Starting app"
+  python app.py
+  echo "done"
+
+# single line folded
+message: >
+  This is a long message
+  written in multiple line
+  but becomes one line
+
+project:
+  name:  ai-platform
+  tech_stack:
+    backend:
+      - python
+      - Fast api
+    infra:
+      - Docker
+      - Kubernetes
+  active: true
