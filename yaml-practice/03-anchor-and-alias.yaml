@@ -1,0 +1,26 @@
+default-config: &app_defaults
+  image: python:3.12
+  restart: always
+
+services:
+  app1:
+    <<: *app_defaults
+  
+  app2:
+    <<: *app_defaults
+
+common: &defaults
+  retries: 3
+  timeout: 30
+
+api:
+  <<: *defaults
+  url: api.example.com
+
+worker:
+  <<: *defaults
+  queue: jobs
+
+app_03:
+  <<: *defaults
+  timeout: 60
